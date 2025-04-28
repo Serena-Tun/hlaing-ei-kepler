@@ -1,0 +1,49 @@
+/*A Font family from Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    background-color: #59a8ee; 
+    color: #0b0202;            
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  section {
+    margin: 40px 0;   /* Adds space above and below each section */
+    padding: 20px;    /* Adds inner spacing inside each section */
+  }
+  #About {
+    text-align: center; 
+  }
+  h1, h2, h3 {
+    font-size: 2rem;      
+    font-weight: 700;      
+    color: #1b0bad;       
+  }
+  #Experience ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #Experience li {
+    background-color: #f0f0f0;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  #Connect a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #Connect a:hover {
+    background-color: #45a049;
+  }
+  
