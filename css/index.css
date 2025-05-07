@@ -5,45 +5,121 @@ body {
     background-color: #59a8ee; 
     color: #0b0202;            
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 80px;
   }
   
-  section {
-    margin: 40px 0;   /* Adds space above and below each section */
-    padding: 20px;    /* Adds inner spacing inside each section */
+h1 {
+  text-align: center; 
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; 
+  padding: 1rem;
+  z-index: 1000; /* make sure it stays on top */
   }
-  #About {
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+    padding: 2rem;
+    background-color: #333;
+  }
+  
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+nav a:hover {
+    text-decoration: underline;
+  }
+
+section {
+    margin: 40px 0;   
+    padding: 20px;   
+  }
+
+  #about {
     text-align: center; 
   }
+
   h1, h2, h3 {
     font-size: 2rem;      
     font-weight: 700;      
     color: #1b0bad;       
   }
-  #Experience ul {
-    list-style: none;
-    padding: 0;
+
+ /* ===== Experience Section ===== */
+
+  #experience {
+  padding: 2rem;
+  }
+
+  .job {
+  background-color: #f4f4f4;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Prevents layout breaking on small screens */
+  margin-bottom: 0.5rem;
+  }
+
+  .job-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  }
+
+  .job-dates {
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+  }
+
+  .job-description {
+  margin-top: 0.5rem;
+  color: #444;
+  line-height: 1.5;
   }
   
-  #Experience li {
-    background-color: #f0f0f0;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  /* ----- Connect Section with Flexbox ----- */
+
+  #connect {
+  padding: 2rem;
   }
-  
-  #Connect a {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem 0;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+
+  .social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1rem;
   }
-  
-  #Connect a:hover {
-    background-color: #45a049;
+
+  .social-links a {
+  background-color: #0a5c93;
+  color: white;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.3s ease;
   }
-  
+
+  .social-links a:hover {
+  background-color: #36e94b;
+  transform: scale(1.1);
+  }
