@@ -60,7 +60,6 @@ section {
   }
 
  /* Experience Section */
-
   #experience {
   padding: 2rem;
   }
@@ -97,9 +96,28 @@ section {
   color: #444;
   line-height: 1.5;
   }
-  
-  /* Connect Section with Flexbox */
 
+/* Skills Section with Flexbox */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+#skills li {
+  background-color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  text-align: center;
+  min-width: 100px;
+}
+  
+/* Connect Section with Flexbox */
   #connect {
   padding: 2rem;
   }
@@ -132,7 +150,6 @@ section {
   }
 
 /* Tablet Styles (≥600px) */
-
 @media (min-width: 600px) {
   h1 {
     font-size: 2rem;
@@ -166,11 +183,14 @@ section {
     height: 60px;
     font-size: 1.7rem;
   }
+
+  #skills li {
+    font-size: 1.1rem;
+    background-color: #e0f7fa;
+  }
 }
 
 /* Desktop Styles (≥900px) */
-
-
 @media (min-width: 900px) {
   h1 {
     font-size: 2.5rem;
@@ -202,4 +222,20 @@ section {
     height: 70px;
     font-size: 2rem;
   }
+
+  #skills li {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background-color: #d1e8ff;
+  }
 }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color:rgb(161, 160, 160);
+  color: white;
+  font-size: 0.9rem;
+} 
+
