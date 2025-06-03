@@ -202,6 +202,17 @@ section {
     width: 100%;
 }
 
+ #projects ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #projects li {
+    flex: 0 1 48%; /* Two columns */
+    font-size: 1.1rem;
+  }
+
 /* Desktop Styles (≥900px) */
 @media (min-width: 900px) {
   h1 {
@@ -242,6 +253,23 @@ section {
   }
 }
 
+#projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  #projects ul {
+    gap: 1.25rem;
+  }
+
+  #projects li {
+    flex: 0 1 30%; /* Three columns */
+    font-size: 1.2rem;
+    padding: 1.25rem;
+  }
+
+/* Footer */  
 footer {
   text-align: center;
   padding: 1rem;
