@@ -62,3 +62,30 @@ messageList.appendChild(newMessage);
 messageForm.reset();
 
 });
+
+// Creating fetch
+fetch("https://api.github.com/users/Serena-Tun/repos")
+  .then(response => response.json())
+  .then(data => {
+    const repositories = data;
+    console.log(repositories); 
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+// Creating for loop
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.error("Error fetching GitHub repos:", error);
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    const errorMsg = document.createElement("li");
+    errorMsg.innerText = "Failed to load projects. Please try again later.";
+    projectList.appendChild(errorMsg);
+  });
